@@ -1,0 +1,28 @@
+:root {
+    --bggreen:rgb(88, 187, 88);
+  }
+  
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+}
+.notefication{
+    margin-left: 0.4em;
+}
+.logo{
+
+}
+.buttons{
+    
+}
+.btn{
+    background-color: var(--bggreen);
+    border: none;
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 0.8em;
+    border-radius: 20px;
+}

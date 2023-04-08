@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+.details{
+    display: inline-block;
+    width: 95%;
+    height: 100vh;
+}
+.box{
+    display: flex;
+    border: 2px solid #dad9d9;
+    margin-top: 20px;
+
+}
+.hospitalPic{
+    display: inline-block;
+    width: 42%;
+    margin-left: 01em;
+    margin-right: 1em;
+    height: 25%;
+    border: 1px solid red;
+}
+.map{
+    display: inline-block;
+    width: 50%;
+    height: 25%;
+    border: 1px solid red;
+}
+
+.data{
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    margin-left: 1rem;
+    width: 95%;
+    height: 50%;
+}
+.form{
+    display: inline-block;
+    border: 1px solid red;
+    width: 100vw;
+}
+.heading{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 6px 0px ;
+}
