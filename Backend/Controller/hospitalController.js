@@ -213,6 +213,10 @@ exports.requestOrganAll=async (req,res,next)=>{
 //Get orgon donation request 
 
 exports.getAllRequest=async(req,res,next)=>{
-    
+    const request= await Requestorgan.find()
+    res.status(200).json({
+        success:true,
+        request
+    })
 }
 

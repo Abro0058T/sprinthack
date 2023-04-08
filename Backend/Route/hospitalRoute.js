@@ -1,5 +1,5 @@
 const express=require("express");
-const { addHospitals, allHospitals, singlehospital, requestHospitals, requestAllHospitals, requestOrganAll, requestOrgan } = require("../Controller/hospitalController");
+const { addHospitals, allHospitals, singlehospital, requestHospitals, requestAllHospitals, requestOrganAll, requestOrgan, getAllRequest } = require("../Controller/hospitalController");
 // const {registerUser}=require("../Controller/userControler")
 const router= express.Router();
 
@@ -10,4 +10,5 @@ router.route("/requestHospital/:email").post(requestHospitals);
 router.route("/requestallhospitals").post(requestAllHospitals)
 router.route("/requestOrganAll").post(requestOrganAll)
 router.route("/requestOrgan/:email").post(requestOrgan)
+router.route("/getAllRequest").get(getAllRequest)
 module.exports=router;

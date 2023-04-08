@@ -6,16 +6,16 @@
     display: flex;
     justify-content: space-between;
     /* border: 2px solid red; */
+    height: 200px;
     margin-top: 20px;
 }
 .notefication{
     margin-left: 0.4em;
 }
-.logo{
-
-}
-.buttons{
-    
+.image{
+    background-image: url(../../logo.jpg);
+    width: 100%;
+    height: 100%;
 }
 .btn{
     background-color: var(--bggreen);
