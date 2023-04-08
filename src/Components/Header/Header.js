@@ -8,7 +8,9 @@ function Header() {
   return (
     <div className={Classes.header}>
         <div className={Classes.notefication}>
+            <Link to='/notification'>
             <Notification />
+            </Link>
         </div>
         <div className={Classes.logo}>
           <Link to='/'><img src={logo}  className={Classes.image} alt="Logo" /></Link>

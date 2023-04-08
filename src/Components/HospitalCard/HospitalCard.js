@@ -3,6 +3,7 @@ import Classes from "./HospitalCard.module.css"
 import { useEffect, useState } from 'react'
 import  Axios  from 'axios'
 import { useNavigate } from 'react-router-dom'
+import apollo from '../../apollo.png'
 function HospitalCard() {
   const navigate=useNavigate()
   const [hospitals,setHospital]=useState()
@@ -22,7 +23,7 @@ navigate(`/hospitalpage/${e}`,{state:{id:e}})
           {hospitals && hospitals.map(hospital=>
     <div className={Classes.cardBox} key={hospital.id} onClick={()=>hospitalpage(hospital.id)}>
      
-        <div className={Classes.photo}></div>
+        <div className={Classes.photo}><img src={apollo}  className={Classes.image} alt="Logo" /></div>
         <div className={Classes.details}>
         <h1 className={Classes.heading}>Name</h1>
         <p className={Classes.data}>{hospital.name}</p>

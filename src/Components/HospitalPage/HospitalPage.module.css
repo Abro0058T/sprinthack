@@ -7,7 +7,7 @@
 }
 .box{
     display: flex;
-    border: 2px solid #dad9d9;
+
     margin-top: 20px;
 
 }
@@ -17,26 +17,37 @@
     margin-left: 01em;
     margin-right: 1em;
     height: 25%;
-    border: 1px solid red;
+    border: 2px solid #c6c2c2;
+    border-radius:20px ;
 }
 .map{
     display: inline-block;
     width: 50%;
     height: 25%;
-    border: 1px solid red;
+    border-left: 2px solid #c6c2c2;
+    /* border-radius:20px ; */
 }
 
 .data{
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid red;
+    border-top: 2px solid #c6c2c2;
+
+    /* border-radius:20px ; */
+    margin-top: 10px;
+
+    color: rgb(43, 42, 42);
     margin-left: 1rem;
     width: 95%;
     height: 50%;
 }
+.data1{
+    color: #767575;
+}
 .form{
     display: inline-block;
-    border: 1px solid red;
+    /* border: 2px solid #c6c2c2; */
+    border-radius:20px ;
     width: 100vw;
 }
 .heading{
