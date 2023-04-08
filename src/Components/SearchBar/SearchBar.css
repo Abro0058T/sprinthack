@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --bgGrey: #e5e5e5;
+}
+
+.input-wrapper {
+  background-color: var(--bgGrey);
+  width: 100%;
+  border-radius: 100px;
+  height: 2.5rem;
+  padding: 0 15px;
+  box-shadow: 0px 0px 0px #ddd;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-icon {
+  color: grey;
+  margin-right: 0.5rem;
+}
+
+#mic-icon {
+  color: grey;
+  margin-left: 0.5rem;
+}
