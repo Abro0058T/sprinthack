@@ -15,10 +15,13 @@ function Notification() {
   return (
     <div>
         <Header/>
+        <h2>Notification</h2>
+        <div style={{width:"90%",overflow:"scroll",marginLeft:"30px"}}>
+
         {
             data && data.map(request=>
                 
-        <div className={Classes.row}>
+                <div className={Classes.row}>
             <h1>Name:-{request.name}</h1>
             <p>Email:-{request.email}</p>
             <p>Address:-{request.address}</p>
@@ -26,7 +29,8 @@ function Notification() {
             <p>Request:-{request.request}</p>
         </div>
                 )
-        }
+            }
+            </div>
     </div>
   )
 }
