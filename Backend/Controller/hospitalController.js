@@ -41,6 +41,7 @@ exports.singlehospital=async(req,res,next)=>{
 // send mail to hospital to volenter as a donar 
 exports.requestHospitals=async (req,res,next)=>{
     const {name,phonenumber,email,address, organ ,bloodGroup,description}=req.body;
+    const hospitalMail = req.params.email;
     const message=`${name} wants to donate organ :-\nName:-${name}\n
      Phone Number:-${phonenumber}\n
      Address:-${address}\n
@@ -64,7 +65,7 @@ exports.requestHospitals=async (req,res,next)=>{
 
     let info = await transporter.sendMail({
         from: '"Abbhishek Naula"<naulaabhishek5@gmail.com>', // sender address
-        to: "abhiseknaulae@gmail.com", // list of receivers
+        to: `${hospitalMail}`, // list of receivers
         subject: "Hello ✔", // Subject line
         text: message, // plain text body
         html:  message, // html body

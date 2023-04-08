@@ -4,6 +4,7 @@ import Classes from "./HospitalPage.module.css"
 import Axios from "axios"
 import axios from 'axios'
 import { useLocation } from 'react-router-dom'
+import DonorForm from '../Form/DonorForm';
 function HospitalPage() {
   const location=useLocation()
   console.log(location.state.id)
@@ -39,9 +40,12 @@ function HospitalPage() {
             <h1 className={Classes.heading}>Blood:-</h1>
             <p className={Classes.data1}>{data[0].blood}</p>
             </div>
-           } 
+      } 
         </div>
-        <div className={Classes.form}>FORM</div>
+        {
+data &&
+          <div className={Classes.form}><DonorForm email={data[0].email}/></div>
+        }
         </div>
         {/* <button onClick={getdata}>click me </button> */}
     </div>
