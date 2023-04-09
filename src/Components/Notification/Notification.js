@@ -16,7 +16,7 @@ function Notification() {
     <div>
         <Header/>
         <h2>Notification</h2>
-        <div style={{width:"90%",overflow:"scroll",marginLeft:"30px"}}>
+        <div style={{width:"90%",overflow:"scroll",height:"70vh",marginLeft:"30px"}}>
 
         {
             data && data.map(request=>

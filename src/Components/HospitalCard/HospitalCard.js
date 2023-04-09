@@ -3,7 +3,7 @@ import Classes from "./HospitalCard.module.css"
 import { useEffect, useState } from 'react'
 import  Axios  from 'axios'
 import { useNavigate } from 'react-router-dom'
-import apollo from '../../apollo.png'
+import apollo from '../../apollo2.png'
 function HospitalCard() {
   const navigate=useNavigate()
   const [hospitals,setHospital]=useState()

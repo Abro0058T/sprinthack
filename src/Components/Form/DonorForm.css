@@ -11,7 +11,11 @@
   flex-direction: column;
 
 }
-
+.p-text{
+  width: 100%;
+  font-family: 'Roboto';
+  margin-top: 10px;
+}
 label {
   text-align: left;
   padding: 0.25rem 0;

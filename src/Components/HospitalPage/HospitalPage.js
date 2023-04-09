@@ -5,6 +5,8 @@ import Axios from "axios"
 import axios from 'axios'
 import { useLocation } from 'react-router-dom'
 import DonorForm from '../Form/DonorForm';
+import picture from '../../apollo2.png'
+import map from "../../map.png"
 function HospitalPage() {
   const location=useLocation()
   console.log(location.state.id)
@@ -21,8 +23,14 @@ function HospitalPage() {
         <Header/>
         <div className={Classes.box}>
         <div className={Classes.details}>
-            <div className={Classes.hospitalPic}>PIC</div>
-            <div className={Classes.map}>MAP</div>
+            {/* <div className={Classes.hospitalPic}> */}
+              <img src={picture}alt="Logo" 
+               className={Classes.hospitalPic}
+              // style={{display:"inline-block"}} 
+              />
+              {/* </div> */}
+            {/* <div className={Classes.map}>MAP</div> */}
+            <img src={map} alt="logo" className={Classes.map} />
 
 {
   data &&

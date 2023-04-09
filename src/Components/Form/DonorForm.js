@@ -39,13 +39,14 @@ function DonorForm(props) {
       console.log(post)
     }
   };
-
+  
   return (
     <div className="form-container">
       <form className="donor-form" onSubmit={handleSubmit}>
         <button className="toggler" onClick={toggleForm}>
           {isDonor ? " Click to request " : "Click for Donor Form"}
         </button>
+      {isDonor ? <p className="p-text">Fill the form for organ donation (Click the above button to fill organ request form)</p>:<p className="p-text">Fill this form for organ request (Click the about button to fill organ donation form)</p>}
         <label>
           Name:
           <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} required />

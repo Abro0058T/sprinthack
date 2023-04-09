@@ -13,7 +13,7 @@
 }
 .hospitalPic{
     display: inline-block;
-    width: 42%;
+    width: 30%;
     margin-left: 01em;
     margin-right: 1em;
     height: 25%;
@@ -22,10 +22,10 @@
 }
 .map{
     display: inline-block;
-    width: 50%;
-    height: 25%;
-    border-left: 2px solid #c6c2c2;
-    /* border-radius:20px ; */
+    width: 60%;
+    height: 35%;
+    border: 2px solid #c6c2c2;
+    border-radius:20px ;
 }
 
 .data{
@@ -41,14 +41,16 @@
     width: 95%;
     height: 50%;
 }
+
 .data1{
     color: #767575;
 }
 .form{
     display: inline-block;
-    /* border: 2px solid #c6c2c2; */
-    border-radius:20px ;
-    width: 100vw;
+    border-left: 2px solid #c6c2c2;
+    /* border-radius:20px ; */
+    width: 50vw;
+
 }
 .heading{
     font-size: 20px;
