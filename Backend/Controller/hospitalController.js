@@ -94,8 +94,10 @@ exports.requestAllHospitals=async (req,res,next)=>{
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'marcelina.heller@ethereal.email',
-            pass: 'd8NvXWwRCpCxAEz7Zv'
+            user: 'forest9@ethereal.email',
+            pass: 'FxaK77AWsQKyKHTedg'
+            // user: 'marcelina.heller@ethereal.email',
+            // pass: 'd8NvXWwRCpCxAEz7Zv'
     
         },
       });
@@ -184,8 +186,10 @@ exports.requestOrganAll=async (req,res,next)=>{
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'marcelina.heller@ethereal.email',
-            pass: 'd8NvXWwRCpCxAEz7Zv'
+            // user: 'marcelina.heller@ethereal.email',
+            // pass: 'd8NvXWwRCpCxAEz7Zv'
+            user: 'forest9@ethereal.email',
+            pass: 'FxaK77AWsQKyKHTedg'
     
         },
       });

@@ -30,8 +30,11 @@ function RequestPage() {
     <div>
           <>
     <div><Header/></div>
+<div style={{marginLeft:"35em"}}>
 
 <h2>Request organs</h2>
+<p>Fill this form to request organ from all  hospital</p>
+</div>
     <div className="form-container">
       <form className="donor-form" onSubmit={handleSubmit}>
         <label>

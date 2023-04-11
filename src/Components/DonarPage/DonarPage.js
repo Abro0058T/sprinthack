@@ -29,7 +29,10 @@ function DonarPage() {
   return (
     <>
     <div><Header/></div>
+    <div style={{marginLeft:"35em"}}>
 <h2>Become a donor</h2>
+<p>Fill this form to become an organ donor</p>
+</div>
     <div className="form-container">
       <form className="donor-form" onSubmit={handleSubmit}>
         <label>
